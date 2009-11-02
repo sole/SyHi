@@ -1,5 +1,6 @@
 === Plugin Name ===
 Contributors: sole
+Donate link: http://soledadpenades.com/projects/wordpress/#donate
 Tags: code, highlight, syntax, preformatting, whitespace, preserve
 Requires at least: 2.8.5
 Tested up to: 2.8.5
