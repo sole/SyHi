@@ -39,10 +39,10 @@ Please have a look at the included readme.txt file for more details on features,
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-if(!class_exists('Syhi'))
+if(!class_exists('SyHi'))
 {
 
-class Syhi
+class SyHi
 {
 	protected $code_blocks;
 	protected $geshi_instance = null;
