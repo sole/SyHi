@@ -1,0 +1,12 @@
+div.syhi_block { margin: 1em 0;  overflow-x:auto;}
+
+div.syhi_block code {
+	 display: block;
+	 font-family: "Andale Mono", Lucidatypewriter,Courier, monospace;
+	 font-size:12px;
+	 font-style:normal;
+	 font-weight:normal;
+	 text-align:left;
+	 white-space:nowrap;
+	 width: 99%;
+}
