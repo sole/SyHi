@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: SyHi
-Version: 0.0.1
+Version: 0.0.2
 Plugin URI: http://soledadpenades.com/projects/wordpress/syhi
 Author: Soledad Penadés
 Author URI: http://soledadpenades.com
@@ -18,41 +18,8 @@ It's also very minimalistic - less than 10k, not counting the GeSHi library whic
 In addition, it's also lazy. It will try to avoid doing as much work as possible.
 That is good, because it will not eat resources like other plug-ins out there.
 
-HOW TO USE IT
+Please have a look at the included readme.txt file for more details on features, usage, etc.
 
-Whenever you want to post some syntax highlighted code, surround it with <code lang="language"></code>. That's it.
-
-Example:
-
-<code lang="php">
-class HelloWorld()
-{
-	public function __construct()
-	{
-		echo "This is an unnecessarily long version of Hello World";
-	}
-}
-</code>
-
-The 'lang' attribute can be entirely omitted. You will get whitespace, quotes and dashes preservation... but no highlighting.
-
-NOTES
-
- * php5 and WP2.8+ are required. The plug-in has not been tested with any other configuration.
- * Be warned: there isn't any options page (yet!). The plug-in can simply be activated or deactivated.
- * Language rules are in libs/geshi/. I haven't uploaded all of the rules that come with the default distribution. If you need rules for a language which is not available, please download a full Geshi stable distribution and upload to your host the sets you require.
-
-KNOWN ISSUES
-
- * You can't place a <code></code> block inside a <code></code> block
- * If you switch to the Visual Editor while editing a post, it will mess with any <code> tags. The results will make you cry.
-
-TODO
-
- Add options for...
- * ... configuring if you want to use my css sheet, your css sheet, both, or no one at all
- * ... configuring if you want to use GeSHi, or are happy with just plain preformatted text
- * ... configuring if you want to allow commenters to post syntax highlighted code snippets
 */
 
 /*  Copyright 2009 Soledad Penades
