@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: SyHi
-Version: 0.0.3
+Version: 0.0.4
 Plugin URI: http://soledadpenades.com/projects/wordpress/syhi
 Author: Soledad Penadés
 Author URI: http://soledadpenades.com
@@ -22,7 +22,7 @@ Please have a look at the included readme.txt file for more details on features,
 
 */
 
-/*  Copyright 2009 Soledad Penades
+/*  Copyright 2009-2010 Soledad Penades
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

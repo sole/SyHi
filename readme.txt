@@ -3,8 +3,8 @@ Contributors: sole
 Donate link: http://soledadpenades.com/projects/wordpress/#donate
 Tags: code, highlight, syntax, preformatting, whitespace, preserve
 Requires at least: 2.8.5
-Tested up to: 2.8.5
-Stable tag: trunk
+Tested up to: 3.0.1
+Stable tag: 0.0.4
 
 Minimalistic Syntax Highlighter plug-in which also makes sure code can still be copied and pasted into your favourite compiler!
 
@@ -27,7 +27,7 @@ That is good, because it will not eat resources like other plug-ins out there.
 - Activate the plugin through the 'Plugins' menu in WordPress
 - That's it!
 
-**Warning:** php5 and WP2.8.5+ are required. The plug-in has not been tested with any other configuration.
+**Warning:** php5 and WP2.8.5 or higher are required. The plug-in has not been tested with any other configuration.
 
 == Usage ==
 
@@ -53,7 +53,7 @@ The 'lang' attribute can be entirely omitted. You will get whitespace, quotes an
 
 This plug-in can beautify snippets in pretty much every programming language you can think of, thanks to the huge language support provided by GeSHi (the highlighting library). 
 
-These are the available languages: abap, actionscript, actionscript3, ada, apache, applescript, apt sources, asm, asp, autoit, avisynth, bash, basic4gl, bf, bibtex, blitzbasic, bnf, boo, c, caddcl, cadlisp, cfdg, cfm, cil, c_mac, cmake, cobol, cpp, cpp-qt, csharp, css, d, dcs, delphi, diff, div, dos, dot, eiffel, email, erlang, fo, fortran, freebasic, genero, gettext, glsl, gml, gnuplot, groovy, haskell, hq9plus, html4strict, idl, ini, inno, intercal, io, java, java5, javascript, kixtart, klonec, klonecpp, latex, lisp, locobasic, lolcode, lotusformulas, lotusscript, lscript, lsl2, lua, m68k, make, matlab, mirc, modula3, mpasm, mxml, mysql, nsis, oberon2, objc, ocaml, ocaml-brief, oobas, oracle8, oracle11, pascal, per, perl, php, php-brief, pic16, pixelbender, plsql, povray, powershell, progress, prolog, properties, providex, python, qbasic, rails, rebol, reg, robots, ruby, sas, scala, scheme, scilab, sdlbasic, smalltalk, smarty, sql, tcl, teraterm, text, thinbasic, tsql, typoscript, vb, vbnet, verilog, vhdl, vim, visualfoxpro, visualprolog, whitespace, whois, winbatch, xml, xorg_conf, xpp, z80.
+These are the available languages: 4cs, 6502acme, 6502kickass, 6502tasm, 68000devpac, abap, actionscript, actionscript3, ada, algol68, apache, applescript, apt sources, asm, asp, autoconf, autohotkey, autoit, avisynth, awk, bash, basic4gl, bf, bibtex, blitzbasic, bnf, boo, c, caddcl, cadlisp, cfdg, cfm, chaiscript, cil, clojure, c_mac, cmake, cobol, cpp, cpp-qt, csharp, css, cuesheet, d, dcs, delphi, diff, div, dos, dot, e, eiffel, email, erlang, f1, fo, fortran, freebasic, fsharp, gambas, gdb, genero, genie, gettext, glsl, gml, gnuplot, go, groovy, gwbasic, haskell, hicest, hq9plus, html4strict, icon, idl, ini, inno, intercal, io, j, java, java5, javascript, kixtart, klonec, klonecpp, latex, lb, lisp, locobasic, logtalk, lolcode, lotusformulas, lotusscript, lscript, lsl2, lua, m68k, magiksf, make, mapbasic, matlab, mirc, mmix, modula2, modula3, mpasm, mxml, mysql, newlisp, nsis, oberon2, objc, objeck, ocaml, ocaml-brief, oobas, oracle8, oracle11, oxygene, oz, pascal, pcre, per, perl, perl6, pf, php, php-brief, pic16, pike, pixelbender, plsql, postgresql, povray, powerbuilder, powershell, progress, prolog, properties, providex, purebasic, python, q, qbasic, rails, rebol, reg, robots, rpmspec, rsplus, ruby, sas, scala, scheme, scilab, sdlbasic, smalltalk, smarty, sql, systemverilog, tcl, teraterm, text, thinbasic, tsql, typoscript, unicon, vala, vb, vbnet, verilog, vhdl, vim, visualfoxpro, visualprolog, whitespace, whois, winbatch, xbasic, xml, xorg_conf, xpp, z80, zxbasic.
 
 When entering the `lang` attribute in the code blocks, make sure the value you enter is exactly one of the languages in the list, or the highlighting will resort to a simple preformatted text.
 
@@ -88,6 +88,10 @@ My tests prove otherwise. You'll need to use the HTML view. At least by now.
 
 == Changelog ==
 
+= 0.0.4 =
+
+* Updated GeSHi to latest version (1.0.8.9). Adds support for new syntaxes: 4cs, 6502acme, 6502kickass, 6502tasm, 68000devpac, algol68, autoconf, autohotkey, awk, chaiscript, clojure, cuesheet, e, ecmascript, f1, fsharp, gambas, gdb, genie, go, gwbasic, hicest, icon, j, jquery, lb, logtalk, magiksf, mapbasic, mmix, modula2, newlisp, objeck, oxygene, oz, perl6, pf, pike, postgresql, powerbuilder, pcre, purebasic, q, rpmspec, rsplus, systemverilog, unicon, vala, xbasic, zxbasic
+
 = 0.0.3 =
 
 * Fix an issue where sometimes code blocks got replaced with placeholders, never to have the beautified code back into place
@@ -104,6 +108,12 @@ My tests prove otherwise. You'll need to use the HTML view. At least by now.
 * First public release
 
 
+== Upgrade notice ==
+
+= 0.0.4 =
+
+Updated syntax highlighter (GeSHi) and added support for new syntaxes: 4cs, 6502acme, 6502kickass, 6502tasm, 68000devpac, algol68, autoconf, autohotkey, awk, chaiscript, clojure, cuesheet, e, ecmascript, f1, fsharp, gambas, gdb, genie, go, gwbasic, hicest, icon, j, jquery, lb, logtalk, magiksf, mapbasic, mmix, modula2, newlisp, objeck, oxygene, oz, perl6, pf, pike, postgresql, powerbuilder, pcre, purebasic, q, rpmspec, rsplus, systemverilog, unicon, vala, xbasic, zxbasic.
+
 == Uninstall ==
 
 Just deactivate the plug-in, and remove its folder from the wp-content/plugins directory.
@@ -115,7 +125,7 @@ Here's its homepage: http://qbnz.com/highlighter/
 
 The following plug-ins were invaluable sources of inspiration and how-to-do-it-right:
 
-* Preserve Code Formatting, by  Scott Reilly (http://coffee2code.com)
+* Preserve Code Formatting, by Scott Reilly (http://coffee2code.com)
 * Code Snippet, by Roman Roan. Now maintained by Wyatt Neal (http://blog.hackerforhire.org/code-snippet/)
 
 You could say this plug-in is the sum of the essence of both plug-ins.
