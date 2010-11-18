@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: SyHi
-Version: 0.0.2
+Version: 0.0.3
 Plugin URI: http://soledadpenades.com/projects/wordpress/syhi
 Author: Soledad Penadés
 Author URI: http://soledadpenades.com
@@ -92,7 +92,7 @@ class SyHi
 				break;
 			}
 
-			list($start_tag, , $lang) = $matches;
+			@ list($start_tag, , $lang) = $matches;
 
 			if(!preg_match('@</code>@i', $text, $matches))
 			{
@@ -110,7 +110,7 @@ class SyHi
 			$block_contents = substr($text, $start_pos + $start_len, strlen($code_block) - $end_len - $start_len );
 			$hash = md5($code_block . count($this->code_blocks));
 			
-			$text = str_replace($code_block, $hash, $text);
+			$text = str_replace($code_block, '<p>'.$hash.'</p>', $text);
 
 			$block_contents = $this->geshi_format(trim($block_contents), $lang);
 			$formatted_block = sprintf('<div class="syhi_block"><code>%s</code></div>', $block_contents);
